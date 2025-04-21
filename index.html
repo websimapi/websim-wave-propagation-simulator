@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wave Propagation Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="app">
+        <div id="controls">
+            <select id="wave-type">
+                <option value="wifi">WiFi</option>
+                <option value="sound">Sound</option>
+                <option value="am">AM Radio</option>
+                <option value="fm">FM Radio</option>
+            </select>
+            <div id="signal-strength">
+                <label>Signal Strength</label>
+                <input type="range" min="1" max="100" value="50">
+            </div>
+            <button id="start-simulation">Start Simulation</button>
+        </div>
+        <canvas id="simulation-canvas"></canvas>
+    </div>
+    <script type="module" src="simulation.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
